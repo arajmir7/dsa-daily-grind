@@ -1,11 +1,11 @@
-# DSA Daily Grind 🚀
+# DSA Daily Grind 
 
-## 🎯 Objective
+## Objective
 Consistent daily practice of Data Structures and Algorithms to build strong problem-solving skills and become interview-ready.
 
 ---
 
-## 📅 Plan
+## Plan
 - Solve problems daily
 - Focus on one topic at a time
 - Move from basics → advanced
@@ -13,7 +13,7 @@ Consistent daily practice of Data Structures and Algorithms to build strong prob
 
 ---
 
-## 🧠 Topics
+## Topics
 - Arrays, Strings  
 - Two Pointers, Sliding Window  
 - Stack, Queue, HashMap  
@@ -22,12 +22,12 @@ Consistent daily practice of Data Structures and Algorithms to build strong prob
 
 ---
 
-## 💻 Language
+## Language
 - Python
 
 ---
 
-## 🚀 Goal
+## Goal
 - 200+ problems solved  
 - Strong DSA foundation  
 - Placement-ready  
