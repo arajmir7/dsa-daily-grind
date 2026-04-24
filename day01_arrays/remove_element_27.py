@@ -6,7 +6,7 @@ class Solution(object):
                 A[i] = A[j]
                 i += 1
         return i
-A = [0,1,2,2,3,4,0,2]
+A = [0,1,2,2,3,4,4,0,2]
 val = 2
 sol = Solution()
 k = sol.removeElement(A, val)
