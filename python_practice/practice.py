@@ -1,28 +1,28 @@
 class Solution:
-    def calculator():
-        print("Select operator")
-        print("1.Add")
-        print("2.Subtract")
-        print("3.Multiply")
-        print("4.Division")
+    def search(self, num, min):
+        left = 0
+        right = len(num)-1
 
-        choice=input("Select a choice: ")
+        while left <= right:
+            mid = (left + right) // 2
 
-        a = float(input("Enter fisrt number: "))
-        b = float(input("Enter second number: "))
-
-        if choice == "1":
-            print("Result: ", a+b)
-        elif choice == "2":
-            print("Result: ", a-b)
-        elif choice == "3":
-            print("Result: ", a*b)
-        elif choice == "4":
-            if b != 0:
-                print("Result: ", a/b)
+            if num[mid] == target:
+                return mid
+            
+            if num[left] <= num[mid]:
+                if num[left] <= target <= num[mid]:
+                    right = mid - 1
+                else:
+                    left = mid + 1
             else:
-                print("Error Cannot divided by zero")
-        else:
-            print("Invalid Choice")
-    calculator()
-
+                if num[mid] <= target <= num[right]:
+                    right = mid - 1
+                else:
+                    left = mid + 1
+        return -1
+if __name__ == "__main__":
+    num = [1,3,4,0,6,7,8,9]
+    target = 0
+    sol = Solution()
+    result = sol.search(num, target)
+    print(result)
